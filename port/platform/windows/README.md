@@ -7,7 +7,6 @@ These directories provide the implementation of the porting layer on Windows.  I
 - [src](src): contains the implementation of the porting layers for Windows.
 - [mcu/win32](mcu/win32): contains the configuration and build files for Windows 32-bit.
 - [u_cfg_os_platform_specific.h](u_cfg_os_platform_specific.h): task priorities and stack sizes for the platform, built into this code.
+- [test](test): contains tests that use Windows APIs to check out the integration of `ubxlib` into Windows, e.g. at PPP level.
 
 Windows is a great environment for rapid development and debug visibility but note that both **stack checking** and **heap checking** cannot be done under Windows.
-
-Note that if you wish to run stuff such as Valgrind, which is only supported on Linux, then you can do so by running [Zephyr on Linux](..\zephyr).

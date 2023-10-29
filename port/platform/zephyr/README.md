@@ -12,6 +12,7 @@ Note: the directory structure here differs from that in the other platform direc
 - [runner](runner): contains the test application configuration and build files for the Nordic MCUs supported on the Zephyr platform.
 - [runner_linux](runner_linux): contains the test application configuration and build files for Linux/Posix on the Zephyr platform.
 - [boards](boards): contains custom u-blox boards that are not \[yet\] in the Zephyr repo.
+- [test](test): contains tests that use Zephyr application APIs to check out the integration of `ubxlib` into Zephyr, e.g. at PPP level.
 
 # SDK Installation (NRF Connect)
 `ubxlib` is tested with the version of Zephyr that comes with `nRFConnect SDK version 2.2.0` which is the recommended version; it is intended to build with all versions nRFConnect SDK from 1.6.1 up til 2.2.0.

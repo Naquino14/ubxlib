@@ -53,10 +53,10 @@ extern "C" {
 #define U_CELL_MUX_CHANNEL_ID_GNSS 0xFF
 
 #ifndef U_CELL_MUX_MAX_CHANNELS
-/** Enough room for the control channel, an AT channel and a
- * GNSS serial channel.
+/** Enough room for the control channel, an AT channel, a
+ * GNSS serial channel and potentially a PPP data channel.
  */
-# define U_CELL_MUX_MAX_CHANNELS 3
+# define U_CELL_MUX_MAX_CHANNELS 4
 #endif
 
 /* ----------------------------------------------------------------

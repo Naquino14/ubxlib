@@ -90,11 +90,13 @@ if (CONFIG_UBXLIB_TEST)
 
     target_sources(app PRIVATE
         ${UBXLIB_TEST_SRC}
+        test/u_zephyr_ppp_test.c
     )
 
     zephyr_include_directories(
         ${UBXLIB_PRIVATE_INC}
         ${UBXLIB_TEST_INC}
+        test
     )
 
     # we need to build https://github.com/ThrowTheSwitch/unity
